@@ -123,7 +123,7 @@ public class Main {
         List<JSONArray> jsonArrays = new ArrayList<>();
         List<Issue> issues = new ArrayList<>();
         String gitHubApiUrl = "https://api.github.com/repos/";
-        String urlAppender = "/issues";
+        String urlAppender = "/issues?per_page=100";
         for (String repo : args) {
             System.out.println("Repository: owner/repositoryName: " + repo);
             String url = gitHubApiUrl + repo + urlAppender;
